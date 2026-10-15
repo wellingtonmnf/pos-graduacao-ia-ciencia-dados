@@ -1,2 +1,5 @@
 # GloVe pre-trained embeddings
-disciplinas/processamento-linguagem-natural/notebooks/unidade-03/GloVe/glove.6B.50d.txt
+disciplinas/processamento-linguagem-natural/dados/glove/glove.6B.50d.txt
+
+# Arquivos gerados pelo exemplo de processamento de imagem
+disciplinas/engenharia-preparacao-visualizacao-dados/resultados/

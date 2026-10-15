@@ -9,7 +9,7 @@ Registro de notebooks e exercícios preservados da pós-graduação em Inteligê
 | [Prática 1 — Aprendendo Python](notebooks/unidade-01-introducao/pratica-1-aprendendo-python.ipynb) | Enunciados de exercícios sobre entrada de dados, condicionais, laços, listas, funções e strings. O cálculo salarial tem implementação e saída salva; as demais respostas contêm principalmente exemplos comentados. |
 | [Prática 2 — Aprendendo Pandas](notebooks/unidade-01-introducao/pratica-2-aprendendo-pandas.ipynb) | Material sobre NumPy, Pandas e Matplotlib, com dados de vendas de videogames. Há exemplos comentados, saídas históricas e respostas de atividades em branco. |
 
-O [CSV de vendas de videogames](notebooks/unidade-01-introducao/at2-vgsales.csv) acompanha a segunda prática. O notebook identifica sua origem como Video Game Sales, disponibilizado no Kaggle por Gregor Utrecht.
+O [CSV de vendas de videogames](dados/at2-vgsales.csv) acompanha a segunda prática. O notebook identifica sua origem como Video Game Sales, disponibilizado no Kaggle por Gregor Utrecht.
 
 ## Unidade 02 — Classificação
 
@@ -61,9 +61,15 @@ Cada arquivo desta unidade contém uma célula de código e **não possui saída
 
 As atribuições acima seguem as declarações dos próprios notebooks. Os demais arquivos não discriminam a origem de cada trecho ou a extensão das adaptações.
 
+## Insumos e preparação da sessão
+
+Os arquivos de entrada mantidos no repositório ficam em [dados/](dados/README.md), ao lado de notebooks/. A prática de Pandas define REPO_DIR, DISCIPLINA_DIR, DATA_DIR e CSV_PATH na preparação inicial e utiliza o CSV dessa pasta. No Colab, a célula obtém uma cópia do repositório caso ainda não exista em /content; em uma cópia local, procura a raiz a partir do diretório da sessão. Alterações locais precisam ser publicadas antes de ficarem disponíveis pelo clone no Colab; cópias antigas na sessão precisam ser atualizadas.
+
+As bases obtidas pelo próprio código, como Online Retail via KaggleHub, MovieLens e Fashion MNIST, continuam com seus mecanismos de obtenção. Esta organização não replica seus caches.
+
 ## Estado de preservação
 
-A documentação foi conferida por leitura dos arquivos em 2026-10-15, sem executar notebooks. Código e nomes foram preservados nesta etapa. O ambiente de execução ainda não foi validado.
+A documentação foi conferida por leitura dos arquivos em 2026-10-15, sem executar notebooks. A manutenção dos insumos reorganizou o CSV e ajustou a preparação e a leitura de dados da prática de Pandas. Respostas pendentes e saídas históricas foram preservadas. O ambiente de execução ainda não foi validado.
 
 Parte dos materiais depende de downloads de datasets, bibliotecas e serviços externos. As saídas persistidas registram o estado histórico dos arquivos.
 

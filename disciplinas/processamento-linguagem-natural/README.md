@@ -52,17 +52,19 @@ Registro de **21 notebooks** preservados da pós-graduação em Inteligência Ar
 
 - Os exercícios de classificação utilizam resenhas do IMDb, carregadas por KaggleHub ou por links externos preservados nos notebooks. Esses dados não são apresentados como coleta própria.
 - Os exercícios introdutórios utilizam recursos de corpus do NLTK; o exemplo de entidades usa um modelo pré-treinado do spaCy.
-- A [pasta GloVe](notebooks/unidade-03/GloVe/README.md) documenta o recurso pré-treinado de Stanford e sua obtenção. O arquivo de vetores não é versionado neste repositório.
-- Os pares de tradução estão em [por.txt](notebooks/unidade-05/datasets/por.txt), também distribuídos no [arquivo compactado](notebooks/unidade-05/datasets/por-eng.zip). O [_about.txt](notebooks/unidade-05/datasets/_about.txt) informa a origem em ManyThings/Tatoeba, a data do conjunto e os termos de uso/atribuição; as linhas do corpus conservam atribuições individuais.
+- A [pasta GloVe](dados/glove/README.md) documenta o recurso pré-treinado de Stanford e sua obtenção. O arquivo de vetores não é versionado neste repositório.
+- Os pares de tradução estão em [por.txt](dados/traducao/por.txt), também distribuídos no [arquivo compactado](dados/traducao/por-eng.zip). O [_about.txt](dados/traducao/_about.txt) informa a origem em ManyThings/Tatoeba, a data do conjunto e os termos de uso/atribuição; as linhas do corpus conservam atribuições individuais.
+
+Os arquivos de entrada mantidos manualmente estão em [dados/](dados/README.md), ao lado de notebooks/. Os oito exemplos com GloVe e os dois Seq2Seq possuem uma preparação inicial que localiza o repositório, define os caminhos dos insumos e informa arquivos ausentes. No Colab, essa preparação clona o repositório somente quando ainda não existe na sessão. O GloVe continua exigindo obtenção e envio manuais; o corpus de tradução acompanha o Git. Mudanças locais só chegam ao clone do Colab após publicação no remoto.
 
 A autoria individual de cada trecho de notebook e a extensão das adaptações não estão discriminadas nesta coleção. Os exemplos e suas variações são preservados como material acadêmico.
 
 ## Estado de preservação e leitura dos resultados
 
-Conferência documental em 2026-10-15, por leitura dos arquivos, sem executar notebooks. Todos conservam alguma saída; a reprodução atual ainda não foi validada. Há dependências de downloads, modelos pré-treinados e caminhos de ambiente de nuvem que precisam de revisão técnica para reprodução.
+Conferência documental em 2026-10-15, por leitura dos arquivos, sem executar notebooks. Todos conservam alguma saída; a reprodução atual ainda não foi validada. Os caminhos dos insumos GloVe e do corpus de tradução foram organizados em dados/, com preparação inicial da sessão. Permanecem dependências de downloads e modelos pré-treinados, e a compatibilidade das bibliotecas ainda precisa de revisão técnica para reprodução.
 
 As métricas de classificação correspondem a experimentos educacionais salvos. Nos exemplos Seq2Seq, a demonstração final reutiliza exemplos incluídos na preparação do treinamento e apresenta traduções de qualidade variável; ela não constitui avaliação independente da qualidade de tradução.
 
-Código e nomes foram preservados nesta etapa, inclusive diferenças entre títulos e implementação.
+Os nomes, algoritmos, parâmetros e resultados salvos foram preservados nesta etapa; as alterações de código se limitam à preparação da sessão e aos caminhos dos insumos. Diferenças entre títulos e implementação permanecem documentadas.
 
 [Voltar ao repositório principal](../../README.md)
