@@ -1,3 +1,5 @@
+![Topo Unifacs](assets/unifacs.png)
+
 # Pós-Graduação em Inteligência Artificial e Ciência de Dados
 
 Acervo de notebooks e exercícios acadêmicos preservados de três disciplinas da Pós-Graduação em Inteligência Artificial e Ciência de Dados da UNIFACS.
@@ -13,7 +15,7 @@ Os materiais incluem exemplos, exercícios e adaptações de tutoriais, organiza
 | [Processamento de Linguagem Natural](disciplinas/processamento-linguagem-natural/README.md) | 21 | Tokenização, pré-processamento, n-gramas, TF-IDF, classificação de texto, embeddings, CNN, LSTM, entidades nomeadas e tradução Seq2Seq |
 | **Total** | **44** | A contagem inclui versões alternativas e variações de exemplos |
 
-Os notebooks de Aprendizado de Máquina e Processamento de Linguagem Natural mantêm a organização por unidade. Em Engenharia, Preparação e Visualização de Dados, os arquivos ficam diretamente na pasta da disciplina.
+Os notebooks de Aprendizado de Máquina e Processamento de Linguagem Natural mantêm a organização por unidade. Em Engenharia, Preparação e Visualização de Dados, os arquivos ficam na pasta `notebooks/`, sem subdivisão por unidade.
 
 ## Como consultar
 
