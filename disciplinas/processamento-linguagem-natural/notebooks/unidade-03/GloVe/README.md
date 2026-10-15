@@ -10,7 +10,7 @@ glove.6B.50d.txt
 
 Esse arquivo **não é armazenado neste repositório Git**, pois possui aproximadamente 163 MB e ultrapassa o limite de 100 MB por arquivo do GitHub para repositórios Git convencionais.
 
-Para executar corretamente os notebooks que utilizam GloVe, siga as instruções abaixo.
+As instruções abaixo descrevem a obtenção do arquivo de vetores. Os caminhos e a compatibilidade das bibliotecas de cada notebook ainda precisam ser verificados antes da execução.
 
 ---
 
@@ -68,7 +68,7 @@ glove.6B.50d.txt
 para:
 
 ```text
-disciplinas/05-processamento-linguagem-natural/notebooks/unidade-03/GloVe/
+disciplinas/processamento-linguagem-natural/notebooks/unidade-03/GloVe/
 ```
 
 A estrutura esperada deve ficar assim:
@@ -95,7 +95,7 @@ Não renomeie o arquivo, pois os notebooks podem utilizar esse caminho diretamen
 
 ## 5. Executar os notebooks
 
-Após colocar o arquivo no diretório correto, os notebooks que dependem dos embeddings GloVe poderão carregá-lo normalmente.
+Após obter o arquivo, confira o caminho de leitura no notebook escolhido. Alguns exemplos preservam caminhos do Google Drive; a presença do arquivo nesta pasta, por si só, não garante sua localização pelo código nem a execução do notebook.
 
 Caso ocorra um erro como:
 

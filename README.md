@@ -1,202 +1,32 @@
 # Pós-Graduação em Inteligência Artificial e Ciência de Dados
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/usuario/pos-graduacao-ia-ciencia-dados/HEAD)
-![UNIFACS](https://img.shields.io/badge/UNIFACS-2025--2026-blueviolet)
+Acervo de notebooks e exercícios acadêmicos preservados de três disciplinas da Pós-Graduação em Inteligência Artificial e Ciência de Dados da UNIFACS.
 
-Repositório dedicado ao armazenamento estruturado de estudos, experimentos e projetos desenvolvidos durante a Pós-Graduação em Inteligência Artificial e Ciência de Dados — UNIFACS. Funciona como laboratório de experimentação e portfólio técnico em IA.
+Os materiais incluem exemplos, exercícios e adaptações de tutoriais, organizados por disciplina. Os catálogos abaixo descrevem o conteúdo dos arquivos disponíveis e registram suas particularidades.
 
----
+## Disciplinas e notebooks
 
-## Índice
+| Disciplina | Notebooks | Conteúdo presente |
+| --- | ---: | --- |
+| [Aprendizado de Máquina](disciplinas/aprendizado-de-maquina/README.md) | 18 | Python e Pandas; classificação; agrupamento e recomendação; regressão; redes neurais e aprendizado por reforço |
+| [Engenharia, Preparação e Visualização de Dados](disciplinas/engenharia-preparacao-visualizacao-dados/README.md) | 5 | Bag-of-Words, exemplos de K-Means e processamento de imagem |
+| [Processamento de Linguagem Natural](disciplinas/processamento-linguagem-natural/README.md) | 21 | Tokenização, pré-processamento, n-gramas, TF-IDF, classificação de texto, embeddings, CNN, LSTM, entidades nomeadas e tradução Seq2Seq |
+| **Total** | **44** | A contagem inclui versões alternativas e variações de exemplos |
 
-- [Estrutura do repositório](#estrutura-do-repositório)
-- [Disciplinas](#disciplinas)
-- [Exemplos de notebooks](#exemplos-de-notebooks)
-- [Execução online](#execução-online)
-- [Reprodução científica](#reprodução-científica)
-- [Tecnologias utilizadas](#tecnologias-utilizadas)
-- [Objetivo](#objetivo)
+Os notebooks de Aprendizado de Máquina e Processamento de Linguagem Natural mantêm a organização por unidade. Em Engenharia, Preparação e Visualização de Dados, os arquivos ficam diretamente na pasta da disciplina.
 
----
+## Como consultar
 
-## Estrutura do repositório
+Abra o catálogo de uma disciplina e siga os links para os notebooks disponíveis. As descrições se baseiam no código e nas explicações presentes nos arquivos.
 
-```
-pos-graduacao-ia-ciencia-dados/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── requirements.txt
-├── environment.yml
-├── .gitattributes                          # Git LFS para datasets grandes
-│
-├── disciplinas/
-│   ├── 01-big-data-analytics/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   │   ├── raw/
-│   │   │   └── processed/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 02-aprendizado-de-maquina/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 03-engenharia-preparacao-visualizacao-dados/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 04-processamento-dados-massivos-modelos/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 05-processamento-linguagem-natural/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 06-experiencia-usuario-ia/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   ├── 07-gestao-conhecimento-inteligencia-competitiva/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   ├── referencias/
-│   │   └── README.md
-│   └── 08-metodologias-gestao-projetos/
-│       ├── notebooks/
-│       ├── dados/
-│       ├── referencias/
-│       └── README.md
-│
-├── datasets/
-│   ├── externos/
-│   └── gerados/
-│
-├── projetos/
-│   ├── projeto-01/
-│   │   ├── notebooks/
-│   │   ├── dados/
-│   │   └── README.md
-│   └── projeto-final/
-│       ├── notebooks/
-│       ├── dados/
-│       └── README.md
-│
-├── recursos/
-│   ├── imagens/
-│   ├── referencias/
-│   └── artigos/
-│
-└── docs/                                   # Jupyter Book → GitHub Pages
-    ├── _config.yml
-    ├── _toc.yml
-    └── intro.md
-```
+O conjunto reúne materiais em diferentes condições: há exemplos com resultados salvos, exercícios com respostas pendentes e código sem saídas registradas. A ausência de saídas, isoladamente, não determina se uma atividade foi concluída. Os resultados persistidos são registros do notebook e não comprovam uma execução atual do código.
 
----
+## Origem dos materiais
 
-## Disciplinas
+Os notebooks pertencem ao contexto de estudo da pós-graduação e incluem exemplos e adaptações de fontes externas. Quando os arquivos identificam autores ou tutoriais de origem, essas atribuições são indicadas nos catálogos das disciplinas e permanecem nos próprios notebooks.
 
-| # | Disciplina | Conteúdos principais |
-|---|------------|----------------------|
-| 01 | **Big Data Analytics** | Hadoop, MapReduce, Data Lakes, NoSQL, IoT, computação em nuvem e distribuída |
-| 02 | **Aprendizado de Máquina** | Classificação, regressão, redes neurais, deep learning, reinforcement learning |
-| 03 | **Engenharia, Preparação e Visualização de Dados** | Qualidade de dados, preparação, visualização, dashboard design |
-| 04 | **Processamento de Dados Massivos e Modelos de Aprendizado** | Bancos NoSQL, grafos, SQL, técnicas de agrupamento e regressão |
-| 05 | **Processamento de Linguagem Natural** | Tokenização, Bag-of-Words, word2vec, redes neurais recorrentes, LSTM |
-| 06 | **Experiência de Usuário e IA** | Design centrado no usuário, comportamento do consumidor, divisão humano-máquina |
-| 07 | **Gestão do Conhecimento e Inteligência Competitiva** | Dado → informação → conhecimento, vantagens competitivas |
-| 08 | **Metodologias para Gestão de Projetos** | PMBOK, metodologias ágeis, escopo, custo, cronograma, gestão de riscos |
+## Dados e execução
 
----
+Alguns dados acompanham os exercícios; outros são obtidos por bibliotecas, downloads ou referências presentes nos notebooks. O corpus de tradução inclui um [arquivo de origem e atribuição](disciplinas/processamento-linguagem-natural/notebooks/unidade-05/datasets/_about.txt). Os vetores GloVe utilizados por parte dos exemplos têm [orientações específicas](disciplinas/processamento-linguagem-natural/notebooks/unidade-03/GloVe/README.md) e não são versionados neste repositório.
 
-## Exemplos de notebooks
-
-| Notebook | Disciplina |
-|----------|------------|
-| Análise Exploratória de Dados | 03 · Engenharia de Dados |
-| Regressão Linear | 02 · Aprendizado de Máquina |
-| Bag-of-Words | 05 · NLP |
-| Pipeline MapReduce | 01 · Big Data Analytics |
-| Clustering K-Means | 04 · Processamento Massivo |
-| Rede Neural LSTM | 05 · NLP |
-
----
-
-## Execução online
-
-### Abrir no Google Colab
-
-Clique em qualquer notebook dentro do repositório e escolha **Open in Colab**.
-
-### Executar com Binder
-
-Clique no badge abaixo para abrir o repositório completo no Binder, sem instalar nada:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wellingtonmnf/pos-graduacao-ia-ciencia-dados/HEAD)
-
-```
-https://mybinder.org/v2/gh/wellingtonmnf/pos-graduacao-ia-ciencia-dados/HEAD
-```
-
----
-
-## Reprodução científica
-
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/wellingtonmnf/pos-graduacao-ia-ciencia-dados.git
-cd pos-graduacao-ia-ciencia-dados
-
-# 2. Criar ambiente virtual (recomendado)
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate   # Windows
-
-# 3. Instalar dependências
-pip install -r requirements.txt
-
-# 4. Executar os notebooks
-jupyter notebook
-```
-
-> **Datasets grandes** são versionados com [Git Large File Storage (LFS)](https://git-lfs.com/).
-> Instale antes de clonar: `git lfs install`
-
----
-
-## Tecnologias utilizadas
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| Linguagem | Python 3.10+ |
-| Manipulação de dados | Pandas, NumPy |
-| Visualização | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
-| Deep Learning | TensorFlow, PyTorch |
-| Ambiente de desenvolvimento | Jupyter Notebook / JupyterLab |
-| Versionamento de dados | Git LFS |
-| Documentação | Jupyter Book, GitHub Pages |
-
----
-
-## Objetivo
-
-Este repositório funciona como:
-
-- **Registro estruturado** do aprendizado ao longo da pós-graduação
-- **Laboratório de experimentação** em ciência de dados e inteligência artificial
-- **Portfólio técnico navegável** para recrutadores, colaborações e referência pessoal
-
----
-
-> Pós-Graduação em Inteligência Artificial e Ciência de Dados · UNIFACS · Salvador, BA
+Parte dos notebooks foi preparada para Google Colab e contém caminhos do Google Drive, instalações de bibliotecas ou downloads próprios daquele ambiente. Dependências, caminhos e compatibilidade precisam ser verificados antes de uma nova execução. A reprodução em ambiente limpo ainda não foi validada.
