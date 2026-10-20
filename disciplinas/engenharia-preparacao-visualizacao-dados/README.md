@@ -28,8 +28,16 @@ A pasta resultados/ é criada na execução e ignorada pelo Git. todos.jpg é ge
 
 ## Estado de preservação
 
-Conferência documental em 2026-10-15, por leitura, sem execução. As imagens foram organizadas e os caminhos de entrada e saída ajustados, com preparação inicial da sessão. As demais células e saídas históricas foram preservadas; a compatibilidade do ambiente ainda precisa ser conferida antes da reprodução.
+Conferência documental em 2026-10-15, por leitura, sem execução. As imagens foram organizadas e os caminhos de entrada e saída ajustados, com preparação inicial da sessão. Os usos de K-Means que dependiam do valor padrão de `n_init` agora declaram `n_init=10`. Esses exemplos pequenos foram executados em ensaios isolados; as saídas históricas permanecem preservadas.
 
-Os resultados salvos fazem parte do registro acadêmico; a execução atual ainda não foi validada.
+Os resultados salvos fazem parte do registro acadêmico; a reprodução integral no Colab ainda não foi validada.
+
+## Revisão das saídas em 20/10/2026
+
+Os exemplos K-Means simples e K-Means random-state identificam no início as saídas históricas que já não correspondem aos prints ou às comparações atuais. Os resultados foram preservados. A execução integral no Colab e a geração de novas figuras e métricas permanecem pendentes; consulte o [estado de execução](../../docs/estado-execucao.md).
+
+## Tamanho das figuras — 20/10/2026
+
+O notebook de processamento de imagens define tamanhos locais: 10 × 10 polegadas a 100 DPI nas duas visualizações de imagem e 8 × 4 polegadas a 100 DPI no histograma. A configuração global de 224 × 224 polegadas foi removida. Os arquivos de entrada mantêm suas dimensões originais; as figuras salvas no notebook são históricas e não foram recalculadas.
 
 [Voltar ao repositório principal](../../README.md)

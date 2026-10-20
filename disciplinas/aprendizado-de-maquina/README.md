@@ -34,14 +34,14 @@ Esses notebooks conservam saídas. As métricas descrevem os exemplos salvos e s
 
 ## Unidade 04 — Regressão
 
-Cada arquivo desta unidade contém uma célula de código e **não possui saídas salvas**. São exemplos curtos preservados; ausência de saída não equivale a resposta em branco.
+Os arquivos desta unidade contêm exemplos curtos organizados em blocos e **não possuem saídas salvas**. A ausência de saída não equivale a resposta em branco.
 
 | Notebook | Conteúdo observado |
 | --- | --- |
 | [Árvore de regressão](notebooks/unidade-04-regressao/arvore-de-regressao.ipynb) | Exemplo de árvore e floresta para regressão, com cálculo de MSE e R². |
 | [Método dos gradientes descendentes](notebooks/unidade-04-regressao/metodo-dos-gradientes-descendentes.ipynb) | Uso de SGDRegressor em dados pequenos construídos no código. |
 | [Método dos mínimos quadrados](notebooks/unidade-04-regressao/metodos-dos-minimos-quadrados.ipynb) | Regressão linear com LinearRegression, previsões, MSE e R². |
-| [SGD Regressor — nome preservado](notebooks/unidade-04-regressao/sgd-regressor.ipynb) | Apesar do nome, o código contém exemplos de Lasso, Ridge e ElasticNet. |
+| [Regressão regularizada: Lasso, Ridge e ElasticNet](notebooks/unidade-04-regressao/regressao-lasso-ridge-elasticnet.ipynb) | Exemplos dos três regressores regularizados em dados pequenos construídos no código. |
 | [SVR](notebooks/unidade-04-regressao/svr.ipynb) | Regressão com máquinas de vetores de suporte e métricas sobre os dados usados no ajuste. |
 
 ## Unidade 05 — Redes neurais e Deep Learning
@@ -67,10 +67,24 @@ Os arquivos de entrada mantidos no repositório ficam em [dados/](dados/README.m
 
 As bases obtidas pelo próprio código, como Online Retail via KaggleHub, MovieLens e Fashion MNIST, continuam com seus mecanismos de obtenção. Esta organização não replica seus caches.
 
+MovieLens usa `scikit-surprise==1.1.5`, sem downgrade forçado de NumPy ou encerramento automático da sessão. A preparação registra as versões e solicita reinicialização manual se uma versão antiga já estiver carregada. Online Retail prepara o adaptador Pandas de KaggleHub e `openpyxl`. Seus dois usos de K-Means declaram `n_init=10`; o modelo final também fixa `random_state=42`.
+
+As cargas de Online Retail e MovieLens fixam a versão 1 dos respectivos handles KaggleHub. Online Retail seleciona explicitamente a aba `Year 2009-2010` de `online_retail_II.xlsx`: 525.461 registros de 01/12/2009 a 09/12/2010, antes da limpeza, conforme conferência integral de 2026-10-19. A segunda aba, `Year 2010-2011`, não integra essa prática. O esquema e a conversão de datas são validados antes do processamento; a contagem e o período efetivos continuam sendo exibidos pelo notebook.
+
+MovieLens valida o esquema de `ratings.csv`, preserva os IDs brutos inteiros e utiliza notas na faixa de 0,5 a 5 nos dois Reader. O modelo final recebe o dicionário completo de parâmetros selecionado por RMSE. A consulta do usuário 610 ao item 10 exige que ambos existam individualmente no treino, sem exigir uma avaliação anterior desse par. As saídas antigas não representam novas previsões ou métricas após essas correções.
+
+O exemplo Atari prepara Gymnasium 1.4.0 e ALE 0.12.1, registra `BreakoutNoFrameskip-v4`, empilha quadros com `FrameStackObservation` e diferencia término natural de truncamento. A instalação das dependências requer acesso à rede na sessão.
+
 ## Estado de preservação
 
-A documentação foi conferida por leitura dos arquivos em 2026-10-15, sem executar notebooks. A manutenção dos insumos reorganizou o CSV e ajustou a preparação e a leitura de dados da prática de Pandas. Respostas pendentes e saídas históricas foram preservadas. O ambiente de execução ainda não foi validado.
+A documentação foi conferida por leitura dos arquivos em 2026-10-15, sem executar notebooks. A manutenção dos insumos reorganizou o CSV e ajustou a preparação e a leitura de dados da prática de Pandas. Respostas pendentes e saídas históricas foram preservadas. A manutenção de compatibilidade atualizou os critérios dos regressores, as preparações de KaggleHub e MovieLens e a API do Gymnasium no Atari. Os casos alterados foram verificados com ensaios isolados; a execução integral dos notebooks em Colab permanece pendente.
 
 Parte dos materiais depende de downloads de datasets, bibliotecas e serviços externos. As saídas persistidas registram o estado histórico dos arquivos.
+
+## Revisão das saídas em 20/10/2026
+
+Python, Pandas, Perceptron, Online Retail e MovieLens identificam no início as divergências entre fontes corrigidas e saídas históricas. A prática de Pandas usa a coluna `Platform` do CSV original e mantém o comentário fora do comando `%matplotlib inline`; uma cópia completa foi validada localmente: 25 células de código não vazias executadas, cinco células vazias preservadas e três gráficos. Os resultados originais não foram substituídos por essa cópia.
+
+A execução integral no Colab está pendente. Os cinco exemplos de regressão, Fashion MNIST e Atari continuam sem saídas registradas, sem preenchimento de atividades ou criação de resultados. Consulte o [estado de execução](../../docs/estado-execucao.md).
 
 [Voltar ao repositório principal](../../README.md)

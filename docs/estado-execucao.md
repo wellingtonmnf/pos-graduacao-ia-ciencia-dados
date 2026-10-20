@@ -1,0 +1,80 @@
+# Estado da execução dos notebooks
+
+Conferência documental: 20/10/2026. O acervo mantém os 44 notebooks acadêmicos existentes e seus registros de execução anteriores.
+
+A prática de Pandas teve duas correções na célula do gráfico: comentário em linha separada do magic e uso da coluna `Platform` do CSV fornecido. Uma cópia limpa foi executada integralmente em ambiente local: 30 células de código percorridas, sendo 25 não vazias executadas e cinco vazias preservadas, três gráficos e nenhuma exceção. A execução usou Python 3.12.14, NumPy 2.3.5, pandas 3.0.1, Matplotlib 3.11.2 e IPython 9.17.1. O arquivo original conserva suas saídas acadêmicas anteriores. Esse teste local não valida uma sessão do Colab.
+
+Nos 25 notebooks com divergências documentadas, a primeira célula contém um aviso específico. A nota é Markdown quando a célula inicial já era Markdown e comentário quando ela contém código; a organização e a numeração das células foram mantidas.
+
+A execução integral no Colab e a renovação identificada das saídas permanecem pendentes nos 44 arquivos. Uma nova execução deve partir de uma revisão identificada, em sessão limpa, com dados e versões registrados. Valores, classes, logs e gráficos devem resultar da execução; não são corrigidos manualmente nos outputs.
+
+| Notebook | Estado dos outputs preservados | Verificação atual |
+| --- | --- | --- |
+| [pratica-1-aprendendo-python.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-01-introducao/pratica-1-aprendendo-python.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [pratica-2-aprendendo-pandas.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-01-introducao/pratica-2-aprendendo-pandas.ipynb) | Históricos com divergências identificadas no aviso inicial | Cópia local completa concluída; Colab pendente |
+| [algoritmo-arvore-de-decisao.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-arvore-de-decisao.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [algoritmo-curva-roc-e-auc.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-curva-roc-e-auc.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [algoritmo-k-nearest-neighbors.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-k-nearest-neighbors.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [algoritmo-naive-bayes-gaussiano.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-naive-bayes-gaussiano.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [algoritmo-regressao-logistica.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-regressao-logistica.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [algoritmo-svm-linear.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/algoritmo-svm-linear.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [redes-neurais-artificiais.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-02-classificacao/redes-neurais-artificiais.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [pratica-de-clusterizacao-online-retail.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-03-clusterizacao/pratica-de-clusterizacao-online-retail.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [sistema-de-recomendacao-movielens.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-03-clusterizacao/sistema-de-recomendacao-movielens.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [arvore-de-regressao.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-04-regressao/arvore-de-regressao.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [metodo-dos-gradientes-descendentes.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-04-regressao/metodo-dos-gradientes-descendentes.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [metodos-dos-minimos-quadrados.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-04-regressao/metodos-dos-minimos-quadrados.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [regressao-lasso-ridge-elasticnet.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-04-regressao/regressao-lasso-ridge-elasticnet.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [svr.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-04-regressao/svr.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [classificacao-basica-imagens-de-roupas.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-05-redes-neurais-e-deep-learning/classificacao-basica-imagens-de-roupas.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [deep-q-learning-atari-breakout.ipynb](../disciplinas/aprendizado-de-maquina/notebooks/unidade-05-redes-neurais-e-deep-learning/deep-q-learning-atari-breakout.ipynb) | Sem saídas registradas | Execução integral no Colab pendente |
+| [bag-of-words.ipynb](../disciplinas/engenharia-preparacao-visualizacao-dados/notebooks/bag-of-words.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [k-means-aprofundado.ipynb](../disciplinas/engenharia-preparacao-visualizacao-dados/notebooks/k-means-aprofundado.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [k-means-random-state.ipynb](../disciplinas/engenharia-preparacao-visualizacao-dados/notebooks/k-means-random-state.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [k-means.ipynb](../disciplinas/engenharia-preparacao-visualizacao-dados/notebooks/k-means.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [processamento-de-imagem.ipynb](../disciplinas/engenharia-preparacao-visualizacao-dados/notebooks/processamento-de-imagem.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [introducao-ao-pln.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-01/introducao-ao-pln.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [tokenizacao-e-bag-of-words.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-01/tokenizacao-e-bag-of-words.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [analise-de-n-gramas.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/analise-de-n-gramas.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-bag-of-words-com-stemming-alternativo.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/classificacao-bag-of-words-com-stemming-alternativo.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-dnn-alternativo.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/classificacao-com-dnn-alternativo.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [classificacao-com-dnn.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/classificacao-com-dnn.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [classificacao-com-tf-idf.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/classificacao-com-tf-idf.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [pre-processamento-com-stemming.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/pre-processamento-com-stemming.ipynb) | Históricos; sem divergência específica comprovada no recorte da leitura | Execução integral no Colab pendente |
+| [representacao-tf-idf.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-02/representacao-tf-idf.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-cnn-alternativo.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-03/classificacao-com-cnn-alternativo.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-cnn.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-03/classificacao-com-cnn.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-glove.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-03/classificacao-com-glove.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-word-embedding.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-03/classificacao-com-word-embedding.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-cnn-lstm-dropout.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-04/classificacao-com-cnn-lstm-dropout.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-cnn-lstm.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-04/classificacao-com-cnn-lstm.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-lstm-alternativo.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-04/classificacao-com-lstm-alternativo.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-lstm-embedding-treinavel.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-04/classificacao-com-lstm-embedding-treinavel.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [classificacao-com-lstm.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-04/classificacao-com-lstm.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [reconhecimento-de-entidades-nomeadas.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-05/reconhecimento-de-entidades-nomeadas.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [traducao-com-seq2seq-alternativo.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-05/traducao-com-seq2seq-alternativo.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+| [traducao-com-seq2seq.ipynb](../disciplinas/processamento-linguagem-natural/notebooks/unidade-05/traducao-com-seq2seq.ipynb) | Históricos com divergências identificadas no aviso inicial | Execução integral no Colab pendente |
+
+As atividades comentadas e as respostas pendentes continuam no escopo original. As demonstrações que terminam na preparação de dados não receberam modelos novos. A presença ou ausência de outputs não determina, isoladamente, se uma atividade foi concluída no passado.
+
+[Voltar ao repositório](../README.md).
+
+## Correções após a auditoria geral — 20/10/2026
+
+Foram corrigidos os dois vetorizadores de PLN (`min_df=1`, `max_df=1.0`), a seleção por posição na demonstração CNN alternativa, dez impressões de métricas de regressão, as explicações de ROC/SVM/overfitting e a descrição das três arquiteturas no catálogo de PLN. O gráfico de taxas por limiar da ROC aplica a mesma máscara de valores finitos aos três vetores; o cálculo seguinte usa os vetores completos.
+
+Nos dois Seq2Seq, a máscara identifica posições com caractere-alvo. O treinamento recebe esses pesos e declara a acurácia em `weighted_metrics`, preservando os nomes `accuracy` e `val_accuracy`. A métrica passa a ser normalizada pelos caracteres-alvo válidos. A perda conserva a redução original pela quantidade total de posições, com contribuição zero das posições sem alvo. As acurácias históricas incluem padding e não foram recalculadas; os avisos iniciais identificam essa diferença. A métrica continua sendo de tokens sob teacher forcing, sem medir por si só a qualidade da tradução livre.
+
+Ensaios locais verificaram os vetorizadores, o alinhamento dos índices, as dez impressões e as células encadeadas de ROC. Em cada Seq2Seq, a arquitetura foi construída com dimensões mínimas e dez pares artificiais, usando Keras 3.15.1 com backend JAX 0.12.0: uma época de `fit` com taxa de aprendizagem zero e `evaluate` confirmaram acurácia ponderada no treino/validação, normalização da perda e invariância da acurácia ao acrescentar padding. A taxa zero mantém os pesos fixos para comparar os cálculos; esse ensaio não reproduz o treinamento acadêmico nem valida o backend TensorFlow do Colab. Os 44 notebooks e suas 751 células de código passaram pela validação estrutural e sintática.
+
+As saídas, os metadados e os contadores anteriores foram preservados. A execução integral no Colab continua pendente. Após aprovação do usuário, a configuração global de 224 × 224 polegadas foi removida do notebook de processamento de imagens. As duas visualizações de imagem definem figuras locais de 10 × 10 polegadas a 100 DPI (1.000 × 1.000 pixels de tela); o histograma define 8 × 4 polegadas a 100 DPI (800 × 400 pixels). As imagens originais e as saídas históricas foram preservadas.
+
+Um ensaio local com Matplotlib 3.11.2 e backend Agg renderizou as chamadas de figura extraídas das células 6, 13 e 17: telas de 1.000 × 1.000, 1.000 × 1.000 e 800 × 400 pixels, respectivamente, sem modificar o tamanho global das figuras. O ensaio utilizou a imagem fornecida e histogramas calculados para verificar a renderização; não reexecutou a detecção de faces nem renovou os outputs acadêmicos.
+
+## Correções da terceira revisão — 20/10/2026
+
+Os dois tradutores Seq2Seq agora encerram a geração quando o comprimento retornado atinge `max_decoder_seq_length`, com `>=`, ou quando encontram o marcador de fim. O teto deriva dos alvos com marcadores de início/fim; não mede a qualidade da tradução. Os resultados históricos não foram recalculados. Um ensaio local extraiu as funções reais e usou predições simuladas: 36 cenários compararam a fonte anterior e a corrigida, nos limites 1, 3 e 45, com e sem fim antecipado. A fonte corrigida respeitou o teto e preservou a parada por fim de frase, sem treinamento ou execução no Colab.
+
+O catálogo de regressão passou a descrever os exemplos organizados em blocos. A referência de imagem sem endereço foi removida da prática de Python. As duas referências Markdown do texto de MovieLens foram corrigidas, incluindo o endereço oficial do ZIP; a carga KaggleHub permaneceu igual. As explicações de Fashion-MNIST agora identificam o array NumPy e o eixo de lote usados pelo código.
+
+As saídas, metadados, contadores e a divisão dos blocos foram preservados. A execução integral no Colab permanece pendente.
