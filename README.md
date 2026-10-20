@@ -41,6 +41,8 @@ Os dados obtidos por bibliotecas, como KaggleHub, scikit-learn, TensorFlow, NLTK
 
 ### Google Colab
 
+Cada notebook possui um botão **Abrir no Colab** no início, que abre o próprio arquivo publicado no GitHub. Depois de abrir, execute as células na ordem indicada.
+
 Todos os notebooks foram trabalhados no Google Colab. Nos exemplos que leem arquivos de `dados/`, as células iniciais de preparação localizam o repositório e definem a pasta da disciplina e `DATA_DIR`. Quando o repositório ainda não está na sessão Colab, a preparação obtém um clone público em `/content/pos-graduacao-ia-ciencia-dados`.
 
 1. Abra o notebook no Colab e execute as células iniciais de preparação.
